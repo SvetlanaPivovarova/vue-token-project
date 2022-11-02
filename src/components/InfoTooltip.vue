@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import router from "../router";
+
 export default {
   data() {
     return {
@@ -21,6 +23,7 @@ export default {
   methods: {
     closePopup() {
       this.isOpen = false;
+      router.push("/tokens");
     }
   }
 }

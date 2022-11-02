@@ -10,7 +10,6 @@ import FormDelete from "../components/FormDelete.vue";
 import InfoTooltip from "../components/InfoTooltip.vue";
 import { useTokenStore } from "../stores/TokenStore.js";
 import {API_URL} from "../../utils/constances";
-import router from "../router";
 
 const store = useTokenStore();
 
@@ -34,11 +33,10 @@ export default {
       })
           .then((response) => response.json())
           .then(() => {
+
             this.isOpen = true;
             this.message = "Токен удален";
-            router.push("/tokens");
-            //this.tokens = result;
-            //this.loading = false
+
           })
           .catch((error) => {
             console.log(error);
