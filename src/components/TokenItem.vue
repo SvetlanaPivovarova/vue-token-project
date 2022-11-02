@@ -54,7 +54,7 @@ export default {
   box-sizing: border-box;
   border: 0;
   border-radius: 48px;
-  background-color: rgba(66, 133, 244, 1);
+  background-color: hsla(160, 100%, 37%, 1);
   background-size: 15px 15px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
