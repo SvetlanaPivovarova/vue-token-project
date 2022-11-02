@@ -46,29 +46,4 @@ export default {
   overflow: hidden;
   margin: 0 20px;
 }
-
-.submit-btn {
-  min-width: 80px;
-  height: 34px;
-  font-size: 12px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 48px;
-  background-color: hsla(160, 100%, 37%, 1);
-  background-size: 15px 15px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  margin: 0;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.submit-btn:hover {
-  opacity: 0.8;
-}
-
-.submit-btn:disabled {
-  background-color: #e5e5e5;
-}
 </style>

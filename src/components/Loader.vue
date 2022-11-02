@@ -4,6 +4,7 @@
 
 <style scoped>
 .lds-default {
+  align-self: center;
   display: inline-block;
   position: relative;
   width: 80px;

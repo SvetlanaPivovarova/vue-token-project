@@ -45,36 +45,10 @@ export default {
 </script>
 
 <style>
-.content__heading {
-  border-bottom: 1px solid rgba(218, 218, 218, 1);
-  margin: 0 0 20px;
-  padding: 40px 0 23px;
-  box-sizing: border-box;
-  font-size: 22px;
-  line-height: 27px;
-  letter-spacing: -0.04em;
-  font-weight: 400;
-  text-align: center;
-}
-
 .buttons-container {
   display: flex;
   justify-content: space-between;
   width: 200px;
   margin: 30px auto;
-}
-
-@media screen and (max-width: 690px) {
-  .content__heading {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .content__heading {
-    font-size: 18px;
-    line-height: 22px;
-    padding-bottom: 28px;
-  }
 }
 </style>
