@@ -38,7 +38,6 @@ export default {
     },
     onDelete() {
       this.$emit("delete-token", this.currentId);
-      console.log("delete", this.currentId);
     },
   },
 };

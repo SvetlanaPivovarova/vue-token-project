@@ -1,16 +1,30 @@
-# vue-project
+# Проект: Vue-project for token-service
 
-This template should help get you started developing with Vue 3 in Vite.
+**Интро**
 
-## Recommended IDE Setup
+Репозиторий для фронтенд-части тестового приложения - интерфейс для добавления нового токена, просмотра существующих токенов, а также отзыва (удаления) токена.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+**Содержание**
 
-## Customize configuration
+    1. Страница /tokens должна выдать список всех токенов в виде таблицы с полями:
+        1. Название домена (строка).
+        2. Токен (строка).
+        3. Удалить (ссылка на страницу удаления).
+    2. Страница добавления токена /add-token, на которой нужно вывести поле «Название домена» и кнопку «Добавить». После нажатия на кнопку, нужно вывести сообщение, что токен добавлен и переадресовать на страницу со списком токенов. Генерацию самого токена будет производить бэкенд. Бэкенд написан самостоятельно.
+    3. Страница /token/token-id/delete которая выводит вопрос «Вы точно хотите удалить данный токен для организации такой-то?». Если человек нажимает кнопку «Да», то производим удаление токена (опять же на стороне бэкенде фактически будет отдаваться ответ в виде готового json файла), выводим сообщение об удалении и переадресуем на страницу со списком токенов. Если человек нажимает «Отмена», то переадресуем на страницу со списком всех токенов.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+**Технологии**
 
-## Project Setup
+В проекте применены:
+* фреймворк VueJS;
+* Pinia
+* методология БЭМ;
+* flex-верстка.
+
+**Размещение проекта**
+[server](https://api.pivovarova.diploma.nomoredomains.xyz/tokens)
+
+**Доступные скрипты**
 
 ```sh
 npm install
